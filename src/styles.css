@@ -1,0 +1,195 @@
+body {
+  font-family: sans-serif;
+}
+
+.carelineText path {
+  fill: #6d6e70;
+  animation: showEngland 3s infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 1.4s;
+}
+
+.englandText path {
+  fill: #6d6e70;
+  animation: showAreIneText 3s infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 1.4s;
+}
+
+.carelineText path:nth-child(1),
+.carelineText path:nth-child(3) {
+  fill: #6d6e70;
+  animation: clText 3s infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 1.4s;
+}
+
+@keyframes showEngland {
+  0% {
+    /* stroke-dashoffset: 100; */
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  20% {
+    /* stroke-dashoffset: 100; */
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  45% {
+    /* stroke-dashoffset: 0; */
+    transform: translateX(0);
+  }
+  45% {
+    opacity: 1;
+  }
+  100% {
+    fill: #6d6e70;
+  }
+}
+
+@keyframes showAreIneText {
+  0% {
+    /* stroke-dashoffset: 100; */
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  20% {
+    /* stroke-dashoffset: 100; */
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  45% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  65% {
+    fill: #6d6e70;
+  }
+  100% {
+    fill: #6d6e70;
+  }
+}
+
+@keyframes clText {
+  0% {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  45% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  60% {
+    fill: #6d6e70;
+  }
+  65% {
+    fill: #6d6e70;
+    stroke: #6d6e70;
+  }
+  75% {
+    fill: #c6576a;
+    stroke: #c6576a;
+  }
+  100% {
+    fill: #c6576a;
+    stroke: #c6576a;
+  }
+}
+
+.cuteBird path {
+  animation: bird 3s infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 1.4s;
+}
+@keyframes bird {
+  0% {
+    transform: translateX(80px);
+  }
+  15% {
+    transform: X(80px);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  100% {
+  }
+}
+
+.bottomText path {
+  /* fill: #6d6e70; */
+  animation: showBottomText 3s infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 1.4s;
+
+  stroke: #6d6e70;
+  stroke-width: 0.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 100;
+  fill: none;
+}
+
+@keyframes showBottomText {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  15% {
+    stroke-dashoffset: 100;
+  }
+  60% {
+    stroke-dashoffset: 0;
+  }
+  65% {
+    fill: #ffffff;
+  }
+  75% {
+    fill: #6d6e70;
+  }
+  100% {
+    fill: #6d6e70;
+    stroke-dashoffset: 0;
+  }
+}
+
+/* .firework path {
+  animation: firework 3s infinite;
+  animation-delay: 1.4s;
+  stroke: #c6576a;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 110;
+  fill: none;
+  transform: translate(50px, 6.5px) scale(0.5);
+}
+
+.firework2 path {
+  animation: firework 3s infinite;
+  animation-delay: 1.4s;
+  stroke: #c6576a;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 110;
+  fill: none;
+  transform: translate(130px, 6.5px) scale(0.5);
+}
+
+@keyframes firework {
+  0% {
+    stroke-dashoffset: 220;
+  }
+  65% {
+    stroke-dashoffset: 110;
+  }
+  95% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: ;
+  }
+} */
